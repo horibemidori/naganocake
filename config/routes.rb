@@ -17,7 +17,9 @@ Rails.application.routes.draw do
    
    get "customers/my_page" => "customers#show", as: "my_page"
    get "/customers/information/edit" => "customers#edit"
+   get "/customers/unsubscribe" => "customers#unsubscribe"
    
+   patch 'customers/withdraw' => 'customers#withdraw', as: 'withdraw_customer'
    
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
