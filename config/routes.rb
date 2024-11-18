@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   sessions: "admin/sessions"
   }
   namespace :admin do
-   get 'homes', to: 'homes#top'
+   get '', to: 'homes#top'
+   resources :genres, only: [:index, :edit, :create, :update]
   end
 
   scope module: :public do
