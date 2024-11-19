@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   namespace :admin do
    get '', to: 'homes#top'
    resources :genres, only: [:index, :edit, :create, :update]
+   resources :items, only: [:index, :new, :create, :show, :edit, :update]
   end
 
   scope module: :public do
