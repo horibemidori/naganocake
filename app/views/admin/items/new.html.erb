@@ -11,9 +11,9 @@
   <h4>税抜価格</h4>
   <%= f.text_field :price %>円
   <h4>販売ステータス</h4>
-  <%= f.radio_button :is_active, "sell" %>
-  <%= f.label :payment_method_sell, "販売中" %>
-  <%= f.radio_button :is_active, "cancel" %>
-  <%= f.label :payment_method_cancel, "販売中止" %>
+  <%= f.radio_button :is_active, "true" %>
+  <%= f.label :is_active_true, "販売中" %>
+  <%= f.radio_button :is_active, "false" %>
+  <%= f.label :is_active_false, "販売中止" %>
   <%= f.submit '新規登録' %>
 <% end %>

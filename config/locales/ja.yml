@@ -1,0 +1,5 @@
+ja:
+  item:
+    is_active:
+      true: "販売中"
+      false: "販売中止"
